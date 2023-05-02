@@ -9,5 +9,5 @@ variable "subject" {
 }
 
 output "hello_world" {
-  value = "HEY HEY SI QUE VA..., ${var.subject}!"
+  value = "EY SI QUE VA..., ${var.subject}!"
 }
