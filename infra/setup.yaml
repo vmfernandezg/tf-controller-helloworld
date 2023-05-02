@@ -7,7 +7,7 @@ spec:
   interval: 1m
   url: https://github.com/vmfernandezg/tf-controller-helloworld
   ref:
-    branch: main
+    branch: test
 ---
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
