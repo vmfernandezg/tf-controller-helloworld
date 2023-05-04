@@ -20,6 +20,8 @@ spec:
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
+  writeOutputsToSecret:
+    name: helloworld-outputs
   #varsFrom:
   #- kind: ConfigMap
     #name: myconfigmap
