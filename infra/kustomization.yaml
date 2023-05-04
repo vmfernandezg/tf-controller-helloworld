@@ -6,3 +6,4 @@ resources:
 - rbac.yaml
 - setup.yaml
 - secret.yaml
+- configmap.yaml
