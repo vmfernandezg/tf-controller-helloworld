@@ -21,7 +21,7 @@ spec:
     kind: GitRepository
     name: helloworld-tf
   writeOutputsToSecret:
-    name: helloworld-outputs
+    name: terraform-outputs
   #varsFrom:
   #- kind: ConfigMap
     #name: myconfigmap
