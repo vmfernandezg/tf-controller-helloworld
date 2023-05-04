@@ -2,7 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: myconfigmap
-  #namespace: default
 data:
   subscription_id: d138c344-c65b-4e01-b8ad-9adfb1dacac4
   tenant_id: a9a8e375-fac1-4ec2-820a-cfb6eb5cf01b
