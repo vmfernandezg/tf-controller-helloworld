@@ -5,3 +5,4 @@ namespace: terraform
 resources:
 - rbac.yaml
 - setup.yaml
+- secret.yaml
