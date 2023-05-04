@@ -20,6 +20,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
-  varsFrom:
-  - kind: Secret
-    name: mysecret
+  #varsFrom:
+  #- kind: Secret
+    #name: mysecret
