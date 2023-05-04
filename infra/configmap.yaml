@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: myconfigmap
+  #namespace: default
+data:
+  subscription_id: d138c344-c65b-4e01-b8ad-9adfb1dacac4
+  tenant_id: a9a8e375-fac1-4ec2-820a-cfb6eb5cf01b
+  client_id: ae901dcb-70d1-47ff-8b0a-66cdb7e56229
+  client_secret: ZjFWOFF+VEdmSFB2NTZaZ3FJRUFzV0xpb2x6RlY2VGFOZmxtSGE5bg
