@@ -22,4 +22,4 @@ spec:
     name: helloworld-tf
 varsFrom:
 - kind: Secret
-    name: terraform.tfvars
+    name: mysecret
