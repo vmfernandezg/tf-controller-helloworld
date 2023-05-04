@@ -20,6 +20,14 @@ spec:
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
+  varsFrom:
+  - kind: ConfigMap
+    name: myconfigmap
+    varsKeys:
+    - subscription_id
+    - tenant_id
+    - client_id
+    - client_secret
   #varsFrom:
   #- kind: Secret
     #name: mysecret
