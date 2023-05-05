@@ -78,8 +78,8 @@ resource "azurerm_network_interface_security_group_association" "example" {
     #resource_group = azurerm_resource_group.rg.name
   #}
 
-  byte_length = 8
-}
+  #byte_length = 8
+#}
 
 # Create storage account for boot diagnostics
 resource "azurerm_storage_account" "my_storage_account" {
