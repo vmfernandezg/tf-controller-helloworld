@@ -15,8 +15,8 @@ metadata:
   name: helloworld-tf
 spec:
   path: ./terraform
-  approvePlan: "disable"
-  #disableDriftDetection: true 
+  approvePlan: "auto"
+  disableDriftDetection: true 
   interval: 10m
   sourceRef:
     kind: GitRepository
