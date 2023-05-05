@@ -1,9 +1,31 @@
-variable "resource_group_location" {
-  default     = "westeurope"
-  description = "Location of the resource group."
+variable "location" {}
+
+variable "admin_username" {
+  type        = string
+  description = "Administrator user name for virtual machine"
 }
 
-variable "resource_group_name_prefix" {
-  default     = "rg"
-  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+variable "admin_password" {
+  type        = string
+  description = "Password must meet Azure complexity requirements"
+}
+
+variable "prefix" {
+  type    = string
+  default = "my"
+}
+
+variable "tags" {
+  type = map
+
+  default = {
+    Environment = "Terraform Controller"
+    Dept        = "Cloud"
+  }
+}
+
+variable "sku" {
+  default = {
+    westeurope  = "18.04-LTS"
+  }
 }
