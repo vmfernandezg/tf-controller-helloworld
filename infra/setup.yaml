@@ -16,7 +16,7 @@ metadata:
 spec:
   path: ./terraform
   approvePlan: ""
-  #disableDriftDetection: true 
+  disableDriftDetection: true 
   interval: 10m
   sourceRef:
     kind: GitRepository
