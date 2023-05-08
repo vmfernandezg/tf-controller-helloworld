@@ -1,28 +1,3 @@
-# Configure the Azure provider
-terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = ">= 2.26"
-    }
-  }
-}
-
-variable "subscription_id" {}
-variable "tenant_id" {}
-variable "client_id" {}
-variable "client_secret" {}
-
-provider "azurerm" {
-  features {}
-
-  subscription_id   = var.subscription_id
-  tenant_id         = var.tenant_id
-  client_id         = var.client_id
-  client_secret     = var.client_secret
-  
-}
-
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "westeurope"
@@ -146,8 +121,4 @@ data "azurerm_public_ip" "ip" {
   name                = azurerm_public_ip.publicip.name
   resource_group_name = azurerm_virtual_machine.vm.resource_group_name
   depends_on          = [azurerm_virtual_machine.vm]
-}
-
-output "public_ip_address" {
-  value = data.azurerm_public_ip.ip.ip_address
 }
