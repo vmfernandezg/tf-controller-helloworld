@@ -23,6 +23,28 @@ spec:
     name: helloworld-tf
   writeOutputsToSecret:
     name: terraform-outputs
+  runnerPodTemplate:
+    spec:
+      #envFrom:
+      #- secretRef:
+          #name: mysecret # MO ACTUALIZA A VARIABLE SUBSCRIPTION_ID
+      env:
+      - name: SUBSCRIPTION
+        valueFrom:
+          secretKeyRef:
+            name: mysecret
+            key: subscription_id
+      volumeMounts:
+      - name: secrets-store-inline
+        mountPath: "/mnt/secrets-store"
+        readOnly: true
+      volumes:
+      - name: secrets-store-inline
+        csi:
+          driver: secrets-store.csi.k8s.io
+          readOnly: true
+          volumeAttributes:
+            secretProviderClass: "mysecretproviderclass"
   #varsFrom:
   #- kind: ConfigMap
     #name: myconfigmap
