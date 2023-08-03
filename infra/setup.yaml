@@ -27,7 +27,7 @@ spec:
   path: ./terraform
   approvePlan: ""
   disableDriftDetection: true 
-  interval: 1m
+  interval: 10m
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
