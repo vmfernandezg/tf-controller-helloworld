@@ -14,7 +14,7 @@ kind: Terraform
 metadata:
   name: helloworld-tf
 spec:
-backendConfig:
+backendConfigSpec:
   customConfiguration: |
     disable: false
     backend "azurerm" {
