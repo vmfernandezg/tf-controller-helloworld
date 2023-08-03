@@ -16,6 +16,7 @@ metadata:
 spec:
 backendConfig:
   customConfiguration: |
+    disable: false
     backend "azurerm" {
       resource_group_name  = "RG-WE-P-TF-01"
       storage_account_name = "azureaksbackup"
