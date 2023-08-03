@@ -15,8 +15,8 @@ metadata:
   name: helloworld-tf
 spec:
 backendConfig:
+  disable: false
   customConfiguration: |
-    disable: false
     backend "azurerm" {
       resource_group_name  = "RG-WE-P-TF-01"
       storage_account_name = "azureaksbackup"
