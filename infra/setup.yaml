@@ -14,18 +14,18 @@ kind: Terraform
 metadata:
   name: helloworld-tf
 spec:
+  backendConfig:
+	  customConfiguration: |
+	    backend "azurerm" {
+		    resource_group_name  = "RG-WE-P-TF-01"
+		    storage_account_name = "azureaksbackup"
+		    container_name       = "tfstate"
+		    key                  = "helloworld.tfstate"
+		  }
   path: ./terraform
   approvePlan: ""
   disableDriftDetection: true 
-  backendConfig:
-    customConfiguration: |
-      backend "azurerm" {
-        storage_account_name = "azureaksbackup"
-        container_name       = "tfstate"
-        key                  = "terraform.tfstate"
-        resource_group_name  = "RG-WE-T-TF-01"
-      }
-  interval: 10m
+  interval: 1m
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
