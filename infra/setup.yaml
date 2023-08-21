@@ -39,7 +39,7 @@ spec:
     name: terraform-outputs
   runnerPodTemplate:
     spec:
-      #image: vfernandezg/tf-runner:azure
+      image: ghcr.io/weaveworks/tf-runner:latest
       #envFrom:
       #- secretRef:
           #name: mysecret # MO ACTUALIZA A VARIABLE SUBSCRIPTION_ID
