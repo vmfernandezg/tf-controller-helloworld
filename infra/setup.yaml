@@ -26,8 +26,8 @@ spec:
       #}
   path: ./terraform
   approvePlan: ""
-  disableDriftDetection: true
-  #disableDriftDetection: false
+  #disableDriftDetection: true
+  disableDriftDetection: false
   interval: 2m
   sourceRef:
     kind: GitRepository
