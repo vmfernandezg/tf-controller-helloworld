@@ -40,7 +40,7 @@ spec:
   runnerPodTemplate:
     spec:
       #image: ghcr.io/weaveworks/tf-runner:v0.14.5
-      image: vfernandezg/tf-runner:azure2.1
+      image: vfernandezg/tf-runner:azure2.4
       #envFrom:
       #- secretRef:
           #name: mysecret # MO ACTUALIZA A VARIABLE SUBSCRIPTION_ID
