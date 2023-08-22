@@ -39,8 +39,8 @@ spec:
     name: terraform-outputs
   runnerPodTemplate:
     spec:
-      image: ghcr.io/weaveworks/tf-runner:v0.14.5
-      #image: docker.io/vfernandezg/tf-runner:azurev1
+      #image: ghcr.io/weaveworks/tf-runner:v0.14.5
+      image: docker.io/vfernandezg/tf-runner:azurev2
       #envFrom:
       #- secretRef:
           #name: mysecret # MO ACTUALIZA A VARIABLE SUBSCRIPTION_ID
