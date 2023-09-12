@@ -26,15 +26,16 @@ spec:
       #}
   path: ./terraform
   approvePlan: ""
-  #disableDriftDetection: true
-  disableDriftDetection: false
+  disableDriftDetection: true
+  #disableDriftDetection: false
   interval: 2m
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
-  #tfstate:
-    #forceUnlock: "yes"
-    #lockIdentifier: 010b8958-7ffd-8ac3-7dc8-9455ce885a16
+  storeReadablePlan: human
+  tfstate:
+    forceUnlock: "yes"
+    lockIdentifier: 010b8958-7ffd-8ac3-7dc8-9455ce885a16
   writeOutputsToSecret:
     name: terraform-outputs
   runnerPodTemplate:
